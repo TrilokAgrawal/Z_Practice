@@ -37,6 +37,14 @@ public class Manager extends Employee implements Cloneable {
 		this.department = department;
 	}
 
+	/**
+	 * Object's protected clone method overridden here with public 
+	 * access specifier. (We can enhance the access specifier 
+	 * when override but can not narrower it.)
+	 * Calling super.clone() is good enough to get the shallow copy, but
+	 * to get deep copy, we need to provide the full clone method.
+	 * Implementation of Clonable is required.  
+	 */
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 		System.out.println("clone called");
