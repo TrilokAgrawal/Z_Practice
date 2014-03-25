@@ -21,7 +21,7 @@ public class BinarySearch {
 	
 	public static void main(String[] args) {
 		int arr[] = {2, 4 , 10, 25, 28, 29, 31, 75};
-		
+		System.out.println();
 		System.out.println(new BinarySearch().binarySearch(arr, 28)[0]);
 	}
 
